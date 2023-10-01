@@ -8,6 +8,7 @@ import "./style.scss";
 
 import logo from "../../assets/movix-logo.svg";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
+
 const Header = () => {
     const [show, setShow] = useState("top");
     const [lastScrollY, setLastScrollY] = useState(0);
