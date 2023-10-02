@@ -43,6 +43,7 @@ const Header = () => {
     }, [lastScrollY]);
 
     const searchQueryHandler = (event) => {
+        
         if (event.key === "Enter" && query.length > 0) {
             navigate(`/search/${query}`);
             setTimeout(() => {
@@ -110,7 +111,7 @@ const Header = () => {
                             <input
                                 type="text"
                                 placeholder="Search for a movie or tv show...."
-                                onChange={(e) => setQuery(e.target.value)}
+                                onChange={(e) => setQuery(e.target.value.trim())}
                                 onKeyUp={searchQueryHandler}
                             />
                             <VscChromeClose

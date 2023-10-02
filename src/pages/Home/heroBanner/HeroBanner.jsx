@@ -20,10 +20,14 @@ const HeroBanner = () => {
         setBackground(bg);
     }, [data]);
 
+    
     const searchQueryHandler = (event) => {
-        console.log(event)
-        if ((event.type=="click" ||event.key === "Enter" )&& query.length > 0) {
+        
+        if (event.key === "Enter" && query.length > 0) {
             navigate(`/search/${query}`);
+            setTimeout(() => {
+                setShowSearch(false);
+            }, 1000);
         }
     };
 
@@ -47,7 +51,7 @@ const HeroBanner = () => {
                         <input
                             type="text"
                             placeholder="Search for a movie or tv show...."
-                            onChange={(e) => setQuery(e.target.value)}
+                            onChange={(e) => setQuery(e.target.value.trim())}
                             onKeyUp={searchQueryHandler}
                             
                         />
