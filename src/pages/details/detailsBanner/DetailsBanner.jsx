@@ -16,7 +16,7 @@ import PosterFallback from "../../../assets/no-poster.png";
 
 import { PlayIcon } from "../Playbtn";
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
-import Genres from "../../../components/genres/Genres;
+import Genres from "../../../components/genres/Genres.jsx";
 Genres
 const DetailsBanner = ({ video, crew }) => {
     const [show, setShow] = useState(false);
