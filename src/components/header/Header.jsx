@@ -42,9 +42,10 @@ const Header = () => {
         };
     }, [lastScrollY]);
 
+    
     const searchQueryHandler = (event) => {
-        
-        if (event.key === "Enter" && query.length > 0) {
+        console.log(event)
+        if ((event.type==="click" || event.key === "Enter") && query.length > 0) {
             navigate(`/search/${query}`);
             setTimeout(() => {
                 setShowSearch(false);
