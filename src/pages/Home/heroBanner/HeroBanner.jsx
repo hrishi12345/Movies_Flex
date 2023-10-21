@@ -25,9 +25,9 @@ const HeroBanner = () => {
         console.log(event)
         if ((event.type==="click" || event.key === "Enter") && query.length > 0) {
             navigate(`/search/${query}`);
-            setTimeout(() => {
-                setShowSearch(false);
-            }, 1000);
+            // setTimeout(() => {
+            //     setShowSearch(false);
+            // }, 1000);
         }
     };
 
