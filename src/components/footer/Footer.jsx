@@ -22,12 +22,13 @@ const Footer = () => {
                     <li className="menuItem">FAQ</li>
                 </ul>
                 <div className="infoText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                "🎬 Welcome to MoviesFlex, Your Ultimate Movie Destination! 🌟
+
+At MoviesFlex, we're not just a website; we're your cinematic haven, a place where movie magic happens. Our passion for movies knows no bounds, and we've poured that love into every pixel of this website. As you explore our virtual movie realm, you're in for an adventure like no other.
+
+🍿 A World of Movies Awaits You 🎥
+
+Get ready to dive into the mesmerizing world of cinema. From timeless classics to the latest blockbusters, we've curated an extensive library of movies that cater to all tastes. Whether you're a die-hard fan of heartwarming dramas, spine-tingling thrillers, or laugh-out-loud comedies, we've got you covered. And for the cinephiles always on the hunt for hidden gems, our handpicked selections are sure to delight.
                 </div>
                 <div className="socialIcons">
                     <span className="icon">
